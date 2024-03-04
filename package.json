@@ -1,0 +1,48 @@
+{
+    "name": "listen-events",
+    "version": "1.0.0",
+    "description": "EventBus 是一个简单的 WEB 端事件侦听器，提供了一种将事件分派给订阅的事件侦听器的机制。",
+    "keywords": [
+        "事件",
+        "侦听器",
+        "事件分派",
+        "订阅事件",
+        "事件侦听器",
+        "events",
+        "event bus",
+        "listen",
+        "event subscription",
+        "js"
+    ],
+    "author": "epldlnwynn",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/epldlnwynn/event-bus"
+    },
+    "homepage": "https://github.com/epldlnwynn/event-bus/#readme",
+    "main": "index.js",
+    "files": [
+        "LICENSE",
+        "README.md",
+        "lib/*.ts",
+        "dist/*.html",
+        "dist/*.js",
+        "*.d.ts",
+        "*.js"
+    ],
+    "license": "MIT",
+    "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "typings": "./index.d.ts",
+    "scripts": {
+        "compile": "tsc lib/event-bus.ts --sourceMap true --outDir ./dist && npm run minify",
+        "minify": "jsmin -o dist/event-bus.min.js ./dist/event-bus.js",
+        "release": "release-it"
+    },
+    "devDependencies": {
+        "jsmin": "^1.0.1",
+        "typescript": "^4.0.5"
+    }
+}
