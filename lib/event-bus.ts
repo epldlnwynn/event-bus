@@ -1,5 +1,5 @@
 
-class EventBus {
+export class EventBus {
     protected _listeners: any;
     constructor(listeners?: any) {
         this._listeners = listeners || {};

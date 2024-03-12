@@ -7,7 +7,8 @@
 /**
  * 事件监听器
  */
-interface EventBus {
+export class EventBus {
+
     emit(name: any, ...args:any): EventBus;
     emitAll(name: any, ...args:any): EventBus;
 
@@ -26,6 +27,6 @@ interface EventBus {
 }
 
 
-declare const EventBus: EventBus;
+declare const eventBus: EventBus;
 
-export default EventBus
+export default eventBus
