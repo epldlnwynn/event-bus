@@ -1,6 +1,6 @@
 {
     "name": "listen-events",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "EventBus 是一个简单的 WEB 端事件侦听器，提供了一种将事件分派给订阅的事件侦听器的机制。",
     "keywords": [
         "事件",
@@ -9,7 +9,7 @@
         "订阅事件",
         "事件侦听器",
         "events",
-        "event bus",
+        "EventBus",
         "listen",
         "event subscription",
         "js"
